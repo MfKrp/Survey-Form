@@ -1,0 +1,108 @@
+* {
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {
+    background-color: #00487c;
+}
+
+#main-div {
+    background-color: #fff;
+    width: 50vw;
+    margin: auto;
+    padding: 3vw;
+    border-radius: 50px;
+
+    /*Colores y estilos visuales*/
+    background-color: #6666ff;
+    color: #000044;
+}
+
+#title {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+}
+
+/*estilos del formulario*/
+#survey-form {
+    display: grid;
+    margin: auto;
+    padding: 0 1vw 1vw 1vw;
+
+    /*Colores y estilos visuales*/
+}
+
+label {
+    margin: 1vw 0 0 0;
+    display: block;
+}
+
+input {
+    margin: 1vw 0.5vw 0 0;
+}
+
+#name, #email, #number {
+    width: 47.5vw;
+    padding: 0.5vw;
+
+    /*colores*/
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-color: #7799ff;
+}
+
+#name:focus, #email:focus, #number:focus {
+    background-color: #99bbff;
+}
+
+#name::placeholder, #email::placeholder, #number::placeholder {
+    color: #ffffff;
+}
+
+#dropdown {
+    padding: 1vw;
+    background-color: #99ccff;
+    border: none;
+    outline: none;
+}
+
+input [type="checkbox"] {
+    display: inline-block;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+textarea {
+    margin-top: 1vw;
+    resize: none;
+    border: none;
+    background-color: #99bbff;
+    border-radius: 25px;
+    padding: 1vw;
+}
+
+textarea:focus {
+    outline: none;
+    color: #000000;
+    background-color: #bbccff;
+}
+
+#submit {
+    margin-top: 1vw;
+    margin-bottom: 0%;
+    padding: 1vw;
+    border: none;
+    background-color: #8888ee;
+    border-radius: 35px;
+}
+
+#submit:hover {
+    background-color: #7799ff;
+}

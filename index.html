@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Estilos para el formulario-->
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!--Vinculacion del css-->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Survey Form</title>
+</head>
+<body>
+    <div id="main-div">
+        <header><H1 id="title">Survey form</H1></header>
+        <p id="description">Thanks helping us to improve our services</p>
+    
+        <form action="#" id="survey-form">
+            <div class="input-container">
+                <label for="name" id="name-label">Ingrese su nombre*</label>
+                <input type="text" id="name" placeholder="Ingrese su nombre" required>
+            </div>
+            
+            <div class="input-container">
+                <label for="email" id="email-label">Ingrese su email*</label>
+                <input type="email" id="email" placeholder="Ingrese su email" required> <!--debe poder solo ingresarse email con la propiedad email solo puede ingresarse cadenas con el formato email-->
+            </div>
+            
+            <div>
+                <label for="number" id="number-label">Ingrese un numero</label>
+                <input type="number" id="number" min="1" max="100" placeholder="Ingrese un numero">
+            </div>
+            
+            <div class="input-container">
+                <label for="dropdown">Seleccione su comida favorita</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="milanesas">Milanesas</option>
+                    <option value="pure_de_papas">Pure de papas</option>
+                   <option value="fideos_con_estofado">Fideos con estofado</option>
+                    <option value="asado">Asado</option>
+            </select>
+            </div>
+
+            <!--Checkboxes-->
+            <div class="input-container">
+                <p>Seleccione el/los animales que mas le agraden de la siguiente lista</p>
+                <label for="murcielago">
+                    <input type="checkbox" name="murcielago" id="murcielago">Murcielago
+                </label>
+    
+                <label for="toro">
+                    <input type="checkbox" name="toro" id="toro">Toro
+                </label>
+    
+                <label for="Aguila">
+                    <input type="checkbox" name="aguila" id="aguila">Aguila
+                </label>
+            </div>
+
+            <!--Campos de eleccion de los elementos radio-->
+            <div class="input-container">
+                <p>Seleccione su caracteristica favorita de un monstruo</p>
+            <label for="cuchillas">
+                <input type="radio" name="caracteristica" id="cuchillas">cuchillas
+            </label>
+
+            <label for="cuernos">
+                <input type="radio" name="caracteristica" id="cuernos">Cuernos
+            </label>
+
+            <label for="tentaculos">
+                <input type="radio" name="caracteristica" id="tentaculos">Tentaculos
+            </label>
+            </div>
+
+            <!--Textarea-->
+            <label for="comentarios">Algo que desee agregar acerca de esta pagina?</label>
+            <textarea name="comentarios" id="comentarios" cols="15" rows="10"></textarea>
+
+            <!--Boton de submit-->
+            <input type="submit" id="submit" value="Subir">
+        </form>
+    </div>
+</body>
+</html>
